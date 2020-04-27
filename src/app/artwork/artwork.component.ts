@@ -9,7 +9,8 @@ export class ArtworkComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+
   }
 
 }
