@@ -4,36 +4,35 @@ import { AboutComponent } from './about/about.component';
 import { ArtistComponent } from './artist/artist.component';
 import { ArtworkComponent } from './artwork/artwork.component';
 
-
-const routes: Routes = [ 
+const routes: Routes = [
     {
-    path: '',
-    component: HomeComponent,
-    data: {
-        name: 'Home'
+        path: '',
+        component: HomeComponent,
+        data: {
+            name: 'Home'
+        }
+    },
+    {
+        path: 'about',
+        component: AboutComponent,
+        data: {
+            name: 'About'
+        }
+    },
+    {
+        path: 'artist',
+        component: ArtistComponent,
+        data: {
+            name: 'Artist'
+        }
+    },
+    {
+        path: 'artwork',
+        component: ArtworkComponent,
+        data: {
+            name: 'Art Work'
+        }
     }
-},
-{
-    path: 'about',
-    component: AboutComponent
-    data: {
-        name: 'About'
-    }
-},
-{
-    path: 'artist'
-    component: ArtistComponent
-    data: {
-        name: 'Artist'
-    }
-},
-{
-    path: 'artwork'
-    component: ArtworkComponent
-    data: {
-        name: 'Art Work'
-    }
-}
 ];
 
-export const RouterModule = RouterModule.forRoot(routes);
+export const routerModule = RouterModule.forRoot(routes);
